@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="In-House Maintenance, LLC — Professional property maintenance for Austin, Central Texas, and El Paso. 24/7 emergency service, certified technicians, bonded and insured."/>
+<title>In-House Maintenance, LLC — Certified Property Maintenance Experts</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- PAGE LOADER -->
+<div id="page-loader">
+  <div class="loader-brand">IN-HOUSE MAINTENANCE</div>
+  <div class="loader-bar-wrap"><div class="loader-bar-fill" id="loader-fill"></div></div>
+  <div class="loader-pct" id="loader-pct">0%</div>
+</div>
+
+<!-- SCROLL PROGRESS -->
+<div id="scroll-progress"></div>
+
+<!-- ═══════════════════════════════════════
+     NAVIGATION
+═══════════════════════════════════════ -->
+<nav>
+  <div class="nav-inner">
+    <a href="#home" class="nav-logo">
+      <img src="images/logo.webp" alt="In-House Maintenance Logo"/>
+      <div>
+        <span class="nav-brand-name">In-House Maintenance</span>
+        <span class="nav-brand-sub">LLC — Austin · Central Texas · El Paso</span>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#expertise">Expertise</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#schedule" class="nav-cta">Schedule Service</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about">About</a>
+  <a href="#expertise">Expertise</a>
+  <a href="#services">Services</a>
+  <a href="#contact">Contact</a>
+  <a href="#schedule" class="mobile-cta">Schedule Service</a>
+</div>
+
+<!-- ═══════════════════════════════════════
+     HERO
+═══════════════════════════════════════ -->
+<section class="hero" id="home">
+  <canvas id="hero-canvas"></canvas>
+
+  <div class="hero-left">
+    <div class="hero-badge">
+      <span class="badge-dot"></span>
+      24/7 Emergency Service Active
+    </div>
+
+    <h1>
+      Property Maintenance<br/>
+      <span class="glitch" data-text="Done Right.">Done Right.</span><br/>
+      <span id="typed-line">Every Time.</span><span class="typing-cursor"></span>
+    </h1>
+
+    <p class="hero-sub">
+      Serving Austin, Central Texas, and El Paso with certified technicians, structured processes, and landlord-focused solutions — built on 30+ years of proven expertise.
+    </p>
+
+    <div class="hero-btns">
+      <a href="#schedule" class="btn-primary">Schedule Service</a>
+      <a href="#contact" class="btn-outline">Contact Us</a>
+    </div>
+
+    <div class="hero-stats">
+      <div class="stat">
+        <span class="stat-num">30+</span>
+        <span class="stat-label">Years Experience</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">24/7</span>
+        <span class="stat-label">Emergency Response</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">100%</span>
+        <span class="stat-label">Bonded &amp; Insured</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <img src="images/hero.webp" alt="In-House Maintenance technicians reviewing plans on-site"/>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     TRUST BAR
+═══════════════════════════════════════ -->
+<div class="trust-bar">
+  <div class="trust-bar-inner">
+    <div class="trust-item">
+      <div class="trust-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.745 3.745 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.745 3.745 0 013.296-1.043A3.745 3.745 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.745 3.745 0 013.296 1.043 3.745 3.745 0 011.043 3.296A3.745 3.745 0 0121 12z"/></svg>
+      </div>
+      Bonded &amp; Insured
+    </div>
+    <div class="trust-divider"></div>
+    <div class="trust-item">
+      <div class="trust-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.26 10.147a60.438 60.438 0 00-.491 6.347A48.62 48.62 0 0112 20.904a48.62 48.62 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.636 50.636 0 00-2.658-.813A59.906 59.906 0 0112 3.493a59.903 59.903 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5"/></svg>
+      </div>
+      TDLR Registered HVAC
+    </div>
+    <div class="trust-divider"></div>
+    <div class="trust-item">
+      <div class="trust-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"/></svg>
+      </div>
+      Full-Time W-2 Employees
+    </div>
+    <div class="trust-divider"></div>
+    <div class="trust-item">
+      <div class="trust-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.213-9.193 2.056 2.056 0 00-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 00-10.026 0 1.106 1.106 0 00-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12"/></svg>
+      </div>
+      Company-Owned Vehicles
+    </div>
+    <div class="trust-divider"></div>
+    <div class="trust-item">
+      <div class="trust-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+      </div>
+      EPA 608 Universal Certified
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════
+     ABOUT
+═══════════════════════════════════════ -->
+<section class="section" id="about" style="background:#fff;">
+  <div class="section-inner">
+    <div class="about-grid">
+
+      <!-- Image column -->
+      <div class="about-img-wrap fade-up">
+        <div class="hex-status"><span class="hex-dot"></span>SYS:ONLINE — 24/7 ACTIVE</div>
+        <img src="images/tech.jpg" alt="In-House Maintenance certified technician at work"/>
+        <div class="about-img-badge">
+          <div class="about-img-badge-num">30+</div>
+          <div class="about-img-badge-text">Years Residential &amp; Multifamily Management</div>
+        </div>
+      </div>
+
+      <!-- Content column -->
+      <div class="fade-up delay-2">
+        <span class="section-tag">About Us</span>
+        <h2 class="section-title">Built on Experience.<br/>Driven by <span>Excellence.</span></h2>
+        <p class="section-sub">
+          In-House Maintenance, LLC was founded by Adrian Briones — a seasoned professional with over 30 years of hands-on experience in residential and multifamily property management. Adrian built this company around a single principle: property owners and tenants deserve responsive, accountable, and expertly executed maintenance service.
+        </p>
+        <p style="font-size:0.88rem;color:#4B5680;line-height:1.7;margin-top:1rem;">
+          Our team operates with structured processes, Fair Housing awareness, and the professionalism that high-performing rental communities demand. We don't just fix problems — we protect your investment.
+        </p>
+
+        <!-- Data bar -->
+        <div class="about-data-bar fade-up delay-3">
+          <div class="about-data-cell">
+            <div class="adc-num" data-count="30" data-suffix="+">0</div>
+            <div class="adc-label">Yrs Experience</div>
+          </div>
+          <div class="about-data-cell">
+            <div class="adc-num" data-count="4" data-suffix="">0</div>
+            <div class="adc-label">Certifications</div>
+          </div>
+          <div class="about-data-cell">
+            <div class="adc-num" data-count="3" data-suffix="">0</div>
+            <div class="adc-label">Associations</div>
+          </div>
+        </div>
+
+        <h3 style="font-family:'Syne',sans-serif;font-weight:700;font-size:0.92rem;color:var(--navy);margin-top:2rem;margin-bottom:1rem;letter-spacing:0.02em;">Certifications &amp; Credentials</h3>
+        <div class="cert-grid">
+          <div class="cert-item">
+            <div class="cert-title">Certified Apartment Maintenance Technician</div>
+            <div class="cert-org">CAMT Certified</div>
+            <div class="cert-verify">[ VERIFIED ACTIVE ]</div>
+          </div>
+          <div class="cert-item">
+            <div class="cert-title">Certified Pool &amp; Spa Operator</div>
+            <div class="cert-org">CPO — PHTA</div>
+            <div class="cert-verify">[ VERIFIED ACTIVE ]</div>
+          </div>
+          <div class="cert-item">
+            <div class="cert-title">TDLR Registered HVAC Technician</div>
+            <div class="cert-org">State of Texas</div>
+            <div class="cert-verify">[ TDLR REGISTERED ]</div>
+          </div>
+          <div class="cert-item">
+            <div class="cert-title">EPA 608 Universal Certified</div>
+            <div class="cert-org">Environmental Protection Agency</div>
+            <div class="cert-verify">[ EPA UNIVERSAL ]</div>
+          </div>
+        </div>
+
+        <!-- Terminal block -->
+        <div class="terminal-block fade-up delay-4">
+          <div class="term-header">
+            <span class="t-dot t-dot-r"></span>
+            <span class="t-dot t-dot-y"></span>
+            <span class="t-dot t-dot-g"></span>
+            <span class="term-title">inhouse-profile.sh</span>
+          </div>
+          <span class="t-line" id="tl1"><span class="t-prompt">$ </span><span class="t-cmd">run --verify credentials</span></span>
+          <span class="t-line" id="tl2"><span class="t-out">Loading profile: </span><span class="t-val">Adrian Briones</span></span>
+          <span class="t-line" id="tl3"><span class="t-out">Experience: </span><span class="t-val">30+ years</span> &nbsp;<span class="t-ok">✓ VERIFIED</span></span>
+          <span class="t-line" id="tl4"><span class="t-out">HVAC License: </span><span class="t-val">TDLR Registered</span> &nbsp;<span class="t-ok">✓ ACTIVE</span></span>
+          <span class="t-line" id="tl5"><span class="t-out">EPA Cert: </span><span class="t-val">608 Universal</span> &nbsp;<span class="t-ok">✓ CURRENT</span></span>
+          <span class="t-line" id="tl6"><span class="t-out">Pool/Spa: </span><span class="t-val">CPO Certified</span> &nbsp;<span class="t-ok">✓ CURRENT</span></span>
+          <span class="t-line" id="tl7"><span class="t-out">Insurance: </span><span class="t-val">Bonded &amp; Insured</span> &nbsp;<span class="t-ok">✓ ACTIVE</span></span>
+          <span class="t-line" id="tl8"><span class="t-prompt">$ </span><span class="t-cmd">status --emergency-line</span></span>
+          <span class="t-line" id="tl9"><span class="t-ok">ONLINE 24/7 &gt;&gt; (844) 415-3000</span><span class="typing-cursor"></span></span>
+        </div>
+
+        <div class="assoc-list">
+          <div class="assoc-item"><span class="assoc-dot"></span>National Apartment Association (NAA)</div>
+          <div class="assoc-item"><span class="assoc-dot"></span>Apartment Institute for Maintenance Excellence (AIME)</div>
+          <div class="assoc-item"><span class="assoc-dot"></span>Pool and Hot Tub Alliance (PHTA)</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     EXPERTISE
+═══════════════════════════════════════ -->
+<section class="section expertise-bg" id="expertise">
+  <div class="section-inner">
+    <div class="fade-up" style="text-align:center;max-width:680px;margin:0 auto;">
+      <span class="section-tag" style="color:var(--accent);display:block;text-align:center;">Our Expertise</span>
+      <h2 class="section-title" style="color:#fff;">What Sets Us <span style="color:var(--accent);">Apart</span></h2>
+      <p class="section-sub" style="color:var(--steel);margin:1rem auto 0;">Comprehensive maintenance solutions built around the needs of property owners — structured, certified, and always professional.</p>
+    </div>
+    <div class="expertise-grid">
+      <div class="exp-card fade-up delay-1">
+        <div class="exp-num">01 // OPERATIONS</div>
+        <div class="exp-title">Landlord-Focused Operations</div>
+        <div class="exp-desc">Every process is designed with the property owner in mind — protecting asset value, reducing turnover costs, and maintaining rental-ready units at all times.</div>
+      </div>
+      <div class="exp-card fade-up delay-2">
+        <div class="exp-num">02 // PROCESS</div>
+        <div class="exp-title">Organized &amp; Structured Service</div>
+        <div class="exp-desc">Our technicians follow documented protocols ensuring consistency, accountability, and predictable outcomes on every work order — every time.</div>
+      </div>
+      <div class="exp-card fade-up delay-3">
+        <div class="exp-num">03 // COMPLIANCE</div>
+        <div class="exp-title">Fair Housing Trained</div>
+        <div class="exp-desc">All technicians are trained in Fair Housing principles — ensuring respectful, compliant, and equitable service to every resident on every property.</div>
+      </div>
+      <div class="exp-card fade-up">
+        <div class="exp-num">04 // CREDENTIALS</div>
+        <div class="exp-title">Certified Across All Trades</div>
+        <div class="exp-desc">From HVAC to pool systems, our certifications are current and comprehensive — no need to source multiple vendors for specialized work.</div>
+      </div>
+      <div class="exp-card fade-up delay-1">
+        <div class="exp-num">05 // WORKFORCE</div>
+        <div class="exp-title">Full-Time W-2 Employees</div>
+        <div class="exp-desc">No gig workers. No contractors. Background-checked, trained in-house, and held to our exacting standards — trust and reliability on every property.</div>
+      </div>
+      <div class="exp-card fade-up delay-2">
+        <div class="exp-num">06 // RESPONSE</div>
+        <div class="exp-title">24/7 Emergency Availability</div>
+        <div class="exp-desc">Property emergencies don't keep business hours. Our rapid-response team is available around the clock to protect your tenants and your investment.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     SERVICES
+═══════════════════════════════════════ -->
+<section class="section" id="services" style="background:#fff;">
+  <div class="section-inner">
+    <div class="fade-up">
+      <span class="section-tag">Services</span>
+      <h2 class="section-title">Complete Property<br/><span>Maintenance Solutions</span></h2>
+      <p class="section-sub">From routine upkeep to emergency repairs — every aspect of property maintenance handled with certified expertise.</p>
+    </div>
+
+    <div class="services-grid">
+
+      <div class="service-card fade-up delay-1">
+        <div class="card-scan"></div>
+        <div class="card-code">SVC-001</div>
+        <div class="svc-icon"><svg viewBox="0 0 24 24"><path d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z"/></svg></div>
+        <h3>Handyman Repairs</h3>
+        <p>General interior and exterior repairs handled efficiently. From drywall and doors to fixtures and flooring.</p>
+        <span class="svc-tag tag-blue">General Maintenance</span>
+        <div class="card-metric"><div class="card-metric-fill" style="--mw:92%"></div></div>
+      </div>
+
+      <div class="service-card fade-up delay-2">
+        <div class="card-scan"></div>
+        <div class="card-code">SVC-002</div>
+        <div class="svc-icon"><svg viewBox="0 0 24 24"><path d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"/></svg></div>
+        <h3>Make Readies</h3>
+        <p>Complete unit turnover services — cleaning, repairs, touch-ups, and inspection to get your property market-ready fast.</p>
+        <span class="svc-tag tag-blue">Turnover Solutions</span>
+        <div class="card-metric"><div class="card-metric-fill" style="--mw:88%"></div></div>
+      </div>
+
+      <div class="service-card fade-up delay-3">
+        <div class="card-scan"></div>
+        <div class="card-code">SVC-003</div>
+        <div class="svc-icon"><svg viewBox="0 0 24 24"><path d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0"/></svg></div>
+        <h3>Trash Outs</h3>
+        <p>Efficient removal of bulk trash, abandoned property, and debris — leaving units clean and ready for the next step.</p>
+        <span class="svc-tag tag-blue">Property Cleanup</span>
+        <div class="card-metric"><div class="card-metric-fill" style="--mw:85%"></div></div>
+      </div>
+
+      <div class="service-card fade-up">
+        <div class="card-scan"></div>
+        <div class="card-code">SVC-004</div>
+        <div class="svc-icon"><svg viewBox="0 0 24 24"><path d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"/></svg></div>
+        <h3>Day Porter Services</h3>
+        <p>Ongoing on-site support to keep common areas, entrances, and shared spaces clean and presentable throughout the day.</p>
+        <span class="svc-tag tag-blue">Ongoing Support</span>
+        <div class="card-metric"><div class="card-metric-fill" style="--mw:78%"></div></div>
+      </div>
+
+      <div class="service-card fade-up delay-1">
+        <div class="card-scan"></div>
+        <div class="card-code">SVC-005</div>
+        <div class="svc-icon"><svg viewBox="0 0 24 24"><path d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"/></svg></div>
+        <h3>Groundskeeping</h3>
+        <p>Landscape maintenance, lawn care, and exterior upkeep that keeps your property attractive and well-maintained year-round.</p>
+        <span class="svc-tag tag-blue">Exterior Care</span>
+        <div class="card-metric"><div class="card-metric-fill" style="--mw:90%"></div></div>
+      </div>
+
+      <div class="service-card fade-up delay-2" style="border-color:rgba(220,38,38,0.18);background:#FFF9F9;">
+        <div class="card-scan" style="background:linear-gradient(90deg,transparent,#DC2626,transparent)"></div>
+        <div class="card-code" style="color:rgba(220,38,38,0.4)">SVC-006</div>
+        <div class="svc-icon" style="background:rgba(220,38,38,0.08)"><svg viewBox="0 0 24 24" style="stroke:#DC2626"><path d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0"/></svg></div>
+        <h3>24/7 Emergency Maintenance</h3>
+        <p>Around-the-clock emergency response for urgent issues. We're available when your tenants need help most.</p>
+        <span class="svc-tag tag-red">Always Available</span>
+        <div class="card-metric"><div class="card-metric-fill" style="--mw:100%;background:linear-gradient(90deg,#DC2626,#F87171)"></div></div>
+      </div>
+
+      <div class="service-card fade-up">
+        <div class="card-scan"></div>
+        <div class="card-code">SVC-007</div>
+        <div class="svc-icon"><svg viewBox="0 0 24 24"><path d="M5.636 5.636a9 9 0 1012.728 0M12 3v9"/></svg></div>
+        <h3>HVAC Service &amp; Repair</h3>
+        <p>TDLR Registered HVAC Technicians providing licensed heating, ventilation, and air conditioning maintenance and repair.</p>
+        <span class="svc-tag tag-green">TDLR Registered</span>
+        <div class="card-metric"><div class="card-metric-fill" style="--mw:95%"></div></div>
+      </div>
+
+      <div class="service-card fade-up delay-1">
+        <div class="card-scan"></div>
+        <div class="card-code">SVC-008</div>
+        <div class="svc-icon"><svg viewBox="0 0 24 24"><path d="M9.348 14.652a3.75 3.75 0 010-5.304m5.304 0a3.75 3.75 0 010 5.304m-7.425 2.121a6.75 6.75 0 010-9.546m9.546 0a6.75 6.75 0 010 9.546M5.106 18.894c-3.808-3.807-3.808-9.98 0-13.788m13.788 0c3.808 3.807 3.808 9.98 0 13.788M12 12h.008v.008H12V12z"/></svg></div>
+        <h3>EPA 608 Refrigerant Handling</h3>
+        <p>Universal EPA 608 Certified technicians for safe, compliant handling of all refrigerant types in HVAC systems.</p>
+        <span class="svc-tag tag-green">EPA Certified</span>
+        <div class="card-metric"><div class="card-metric-fill" style="--mw:96%"></div></div>
+      </div>
+
+      <div class="service-card fade-up delay-2">
+        <div class="card-scan"></div>
+        <div class="card-code">SVC-009</div>
+        <div class="svc-icon"><svg viewBox="0 0 24 24"><path d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"/></svg></div>
+        <h3>Pool &amp; Spa Maintenance</h3>
+        <p>PHTA Certified Pool &amp; Spa Operators maintaining safe, clean, code-compliant pools and spas for multifamily properties.</p>
+        <span class="svc-tag tag-green">CPO Certified</span>
+        <div class="card-metric"><div class="card-metric-fill" style="--mw:89%"></div></div>
+      </div>
+
+    </div>
+
+    <!-- Assurance bar -->
+    <div class="assurance-bar fade-up">
+      <div class="assurance-item">
+        <div class="asr-icon"><svg viewBox="0 0 24 24"><path d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/></svg></div>
+        <div><div class="asr-title">Bonded &amp; Insured</div><div class="asr-sub">Fully protected, always</div></div>
+      </div>
+      <div class="assurance-item">
+        <div class="asr-icon"><svg viewBox="0 0 24 24"><path d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.213-9.193 2.056 2.056 0 00-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 00-10.026 0 1.106 1.106 0 00-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12"/></svg></div>
+        <div><div class="asr-title">Company-Owned Vehicles</div><div class="asr-sub">Professional fleet, always ready</div></div>
+      </div>
+      <div class="assurance-item">
+        <div class="asr-icon"><svg viewBox="0 0 24 24"><path d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"/></svg></div>
+        <div><div class="asr-title">Full-Time W-2 Employees</div><div class="asr-sub">Vetted, trained, accountable</div></div>
+      </div>
+      <a href="tel:8444153000" class="btn-primary">Call Now: (844) 415-3000</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     CTA / SCHEDULE
+═══════════════════════════════════════ -->
+<section class="cta-section" id="schedule">
+  <div class="orb orb1"></div>
+  <div class="orb orb2"></div>
+  <div class="orb orb3"></div>
+  <div class="data-ticker">
+    <div class="data-ticker-inner">
+      BONDED &amp; INSURED &nbsp;&middot;&nbsp; TDLR REGISTERED HVAC &nbsp;&middot;&nbsp; EPA 608 UNIVERSAL &nbsp;&middot;&nbsp; CPO CERTIFIED &nbsp;&middot;&nbsp; NAA MEMBER &nbsp;&middot;&nbsp; 24/7 EMERGENCY &nbsp;&middot;&nbsp; FAIR HOUSING TRAINED &nbsp;&middot;&nbsp; W-2 EMPLOYEES &nbsp;&middot;&nbsp; COMPANY VEHICLES &nbsp;&nbsp;&nbsp;
+      BONDED &amp; INSURED &nbsp;&middot;&nbsp; TDLR REGISTERED HVAC &nbsp;&middot;&nbsp; EPA 608 UNIVERSAL &nbsp;&middot;&nbsp; CPO CERTIFIED &nbsp;&middot;&nbsp; NAA MEMBER &nbsp;&middot;&nbsp; 24/7 EMERGENCY &nbsp;&middot;&nbsp; FAIR HOUSING TRAINED &nbsp;&middot;&nbsp; W-2 EMPLOYEES &nbsp;&middot;&nbsp; COMPANY VEHICLES &nbsp;&nbsp;&nbsp;
+    </div>
+  </div>
+  <div class="cta-inner fade-up">
+    <span class="section-tag" style="color:rgba(255,255,255,0.5);display:block;text-align:center;font-family:'Courier New',monospace;">Customer Portal</span>
+    <h2>Ready to Schedule<br/>Service?</h2>
+    <p>Property owners and tenants can request maintenance, track work orders, and communicate with our team — quickly and professionally.</p>
+    <a href="tel:8444153000" class="cta-phone">(844) 415-3000</a>
+    <p class="cta-note">Main office line — Mon–Fri business hours &nbsp;|&nbsp; 24/7 for emergencies</p>
+    <div class="cta-btns">
+      <a href="mailto:office@inhousemaintenance.com" class="btn-white">Schedule Online</a>
+      <a href="#contact" class="btn-ghost">Find Our Offices</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     CONTACT
+═══════════════════════════════════════ -->
+<section class="section" id="contact" style="background:var(--off-white);">
+  <div class="section-inner">
+    <div class="fade-up">
+      <span class="section-tag">Contact Us</span>
+      <h2 class="section-title">Our <span>Offices</span></h2>
+      <p class="section-sub">Two locations to serve Central Texas and West Texas — ready to respond when you need us.</p>
+    </div>
+
+    <div class="contact-grid">
+
+      <!-- Round Rock -->
+      <div class="contact-card fade-up delay-1">
+        <span class="office-tag">Round Rock, TX</span>
+        <h3>Central Texas Office</h3>
+        <div class="contact-row">
+          <div class="c-icon"><svg viewBox="0 0 24 24"><path d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg></div>
+          <div>
+            <div class="c-label">Address</div>
+            <div class="c-val">2700 Louis Henna Boulevard<br/>Round Rock, Texas 78664</div>
+          </div>
+        </div>
+        <div class="contact-row">
+          <div class="c-icon"><svg viewBox="0 0 24 24"><path d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/></svg></div>
+          <div>
+            <div class="c-label">Email</div>
+            <div class="c-val"><a href="mailto:office@inhousemaintenance.com">office@inhousemaintenance.com</a></div>
+          </div>
+        </div>
+        <div class="contact-row">
+          <div class="c-icon"><svg viewBox="0 0 24 24"><path d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div>
+          <div>
+            <div class="c-label">Office Hours</div>
+            <div class="c-val">Mon–Fri: 8:00 AM – 5:00 PM<br/><span style="color:#DC2626;font-size:0.78rem;font-weight:600;font-family:'Courier New',monospace;">STATUS: CLOSED</span></div>
+          </div>
+        </div>
+        <a href="https://maps.google.com/?q=2700+Louis+Henna+Boulevard+Round+Rock+Texas+78664" target="_blank" rel="noopener" class="dir-link">
+          Get Directions
+          <svg viewBox="0 0 24 24"><path d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"/></svg>
+        </a>
+      </div>
+
+      <!-- El Paso -->
+      <div class="contact-card fade-up delay-2">
+        <span class="office-tag">El Paso, TX</span>
+        <h3>West Texas Office</h3>
+        <div class="contact-row">
+          <div class="c-icon"><svg viewBox="0 0 24 24"><path d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg></div>
+          <div>
+            <div class="c-label">Address</div>
+            <div class="c-val">645 Wallenberg Drive, Suite B2<br/>El Paso, Texas 79912</div>
+          </div>
+        </div>
+        <div class="contact-row">
+          <div class="c-icon"><svg viewBox="0 0 24 24"><path d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/></svg></div>
+          <div>
+            <div class="c-label">Email</div>
+            <div class="c-val"><a href="mailto:office@inhousemaintenance.com">office@inhousemaintenance.com</a></div>
+          </div>
+        </div>
+        <div class="contact-row">
+          <div class="c-icon"><svg viewBox="0 0 24 24"><path d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div>
+          <div>
+            <div class="c-label">Office Hours</div>
+            <div class="c-val">Mon–Fri: 8:00 AM – 5:00 PM<br/><span style="color:#DC2626;font-size:0.78rem;font-weight:600;font-family:'Courier New',monospace;">STATUS: CLOSED</span></div>
+          </div>
+        </div>
+        <a href="https://maps.google.com/?q=645+Wallenberg+Drive+Suite+B2+El+Paso+Texas+79912" target="_blank" rel="noopener" class="dir-link">
+          Get Directions
+          <svg viewBox="0 0 24 24"><path d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- Phone card -->
+    <div class="phone-card fade-up">
+      <div>
+        <h3>Prefer to Call?</h3>
+        <p>Available during business hours — and 24/7 for property emergencies.</p>
+      </div>
+      <a href="tel:8444153000" class="phone-num">(844) 415-3000</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════ -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand-row">
+        <img src="images/logo.webp" alt="In-House Maintenance"/>
+        <div>
+          <div class="footer-brand-name">In-House Maintenance, LLC</div>
+          <div class="footer-brand-sub">Certified · Bonded · Insured</div>
+        </div>
+      </div>
+      <p class="footer-desc">Professional property maintenance for rental housing in Austin, Central Texas, and El Paso. Trusted by property owners since 2020.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="#services">Handyman Repairs</a></li>
+        <li><a href="#services">Make Readies</a></li>
+        <li><a href="#services">Trash Outs</a></li>
+        <li><a href="#services">Day Porter</a></li>
+        <li><a href="#services">Groundskeeping</a></li>
+        <li><a href="#services">HVAC Service</a></li>
+        <li><a href="#services">Pool &amp; Spa</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#expertise">Our Expertise</a></li>
+        <li><a href="#schedule">Schedule Service</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="tel:8444153000">(844) 415-3000</a></li>
+        <li><a href="mailto:office@inhousemaintenance.com">office@inhousemaintenance.com</a></li>
+        <li><a href="#contact">Round Rock, TX 78664</a></li>
+        <li><a href="#contact">El Paso, TX 79912</a></li>
+      </ul>
+    </div>
+  </div>
+  <hr class="footer-divider"/>
+  <div class="footer-bottom">
+    <span>&copy; 2020&ndash;2026 In-House Maintenance, LLC. All rights reserved.</span>
+    <div class="footer-badges">
+      <span class="f-badge">Bonded &amp; Insured</span>
+      <span class="f-badge">TDLR Registered</span>
+      <span class="f-badge">EPA 608 Certified</span>
+      <span class="f-badge">CPO Certified</span>
+      <span class="f-badge">NAA Member</span>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
